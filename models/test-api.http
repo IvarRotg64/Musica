@@ -1,0 +1,25 @@
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{
+  "title": "Song Title",
+  "artist": "Artist Name",
+  "genre": "Pop",
+  "filePath": "path/to/song.mp3"
+}
+
+GET http://localhost:3000/songs
+
+GET http://localhost:3000/songs/{song_id}
+
+PUT http://localhost:3000/songs/{song_id}
+Content-Type: application/json
+
+{
+  "title": "Updated Song Title",
+  "artist": "Updated Artist Name",
+  "genre": "New Genre",
+  "filePath": "new/path/to/song.mp3"
+}
+
+DELETE http://localhost:3000/songs/{song_id}
